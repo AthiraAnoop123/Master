@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between; /* Space out the left and right sections */
+  align-items: center;
+}
+
+.left-items {
+  display: flex;
+  gap: 20px;  /* Adjust space between items */
+}
+
+.spacer {
+  flex: 1;  /* This creates space between left items and the back button */
+}
+
+#bckbtn {
+  margin-left: auto;  /* Ensure the button stays at the far right */
+}
