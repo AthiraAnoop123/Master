@@ -7,11 +7,13 @@ import { MatSelectModule } from '@angular/material/select';  // Ensure this impo
 import {provideNativeDateAdapter} from '@angular/material/core';
 import { MatOptionModule } from '@angular/material/core'; 
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../../shared/shared.module';
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-register-student-details',
   standalone: true,
   providers: [provideNativeDateAdapter()],
-  imports: [CommonModule,FormsModule,MatFormFieldModule,MatInputModule,MatDatepickerModule,MatSelectModule,MatOptionModule],
+  imports: [CommonModule,FormsModule,MatFormFieldModule,MatInputModule,MatDatepickerModule,MatSelectModule,MatOptionModule,SharedModule,HttpClient],
   templateUrl: './register-student-details.component.html',
   styleUrl: './register-student-details.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
