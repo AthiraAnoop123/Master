@@ -1,0 +1,10 @@
+export interface Daum {
+  departmentId: number
+  departmentName: string
+  departmentFullName?: string
+  parentId: number
+  parentName: string
+  headDept: number
+  isActive: number
+  createdBy: number
+}

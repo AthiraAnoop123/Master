@@ -24,4 +24,9 @@ export class NavbarComponent {
   {
     this.router.navigate(['/Register']);  // Navigate to the login route
   }
+  listview()
+  {
+    
+    this.router.navigate(['/ListView']);  // Navigate to the login route
+  }
 }

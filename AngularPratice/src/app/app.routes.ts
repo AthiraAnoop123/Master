@@ -1,8 +1,9 @@
 import { Routes } from '@angular/router';
 
 import { LoginComponent } from './login/login.component';
-import { register } from 'module';
+
 import { RegisterStudentDetailsComponent } from './register-student-details/register-student-details.component';
+import { DeptlistComponent } from './deptlist/deptlist.component';
 
 export const routes: Routes = [
     {
@@ -12,5 +13,9 @@ export const routes: Routes = [
     {
         path:"Register",
         component:RegisterStudentDetailsComponent
+    },
+    {
+        path:"ListView",
+        component:DeptlistComponent
     }
 ];
